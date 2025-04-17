@@ -11,6 +11,9 @@ class SplashScene extends Phaser.Scene {
     super({ key: "splashScene" })
   }
 
+/**
+ * @param {object} data 
+ */
   inti(data) {
     this.cameras.main.setBackgroundColor("ffffff")
   }
@@ -19,10 +22,17 @@ class SplashScene extends Phaser.Scene {
     console.log("Splash Scene")
   }
 
+/**
+ * @param {object} data 
+ */
   create(data) {
     // pass
   }
 
+/**
+ * @param {number} time
+ * @param {number} delta 
+ */
   update(time, delta) {
     // pass
   }
