@@ -1,13 +1,13 @@
 /* global Phaser */
 
-// Copyright (c) 2020 Mr. Coxall All rights reserved
-//
 // Created by: Bain Liao
 // Created on: Apr 2025
 // This is the Phaser3 game configuration file
 
-import SplashScene from "./splashScene"
+// scene isport statements 
+import SplashScene from "./splashScene.js"
 
+// create the new scenes 
 const splashScene = new SplashScene()
 
 /**
@@ -33,11 +33,11 @@ const config = {
 }
 
 const game = new Phaser.Game(config)
-// console.log(game)
+console.log(game)
 
-// load scenes
-// NOTE: remember any "key" is global and CAN NOT be reused
-game.scene.add('splashScene', splashScene)
+// load scenes 
+// Note: remember any "key" is global and CAN NOT be reused! 
+game.scene.add("splashScene", splashScene)
 
-// start title
-game.scene.start('splashScene')
+// the start scene 
+game.scene.start("splashScene")
