@@ -29,7 +29,7 @@ class TitleScene extends Phaser.Scene {
    * Can be defined on your own Scenes.
    * Use it to load assets.
    */
-  preload() {
+  preload () {
     console.log('Title Scene')
   }
 
@@ -38,7 +38,7 @@ class TitleScene extends Phaser.Scene {
    * Use it to create your game objects.
    * @param {object} data Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  create(data) {
+  create (data) {
     // pass
   }
 
@@ -48,7 +48,7 @@ class TitleScene extends Phaser.Scene {
    * @param {number} time The current time.
    * @param {number} delta The delta time in ms since the last frame.
    */
-  update(time, delta) {
+  update (time, delta) {
     // pass
   }
 }
