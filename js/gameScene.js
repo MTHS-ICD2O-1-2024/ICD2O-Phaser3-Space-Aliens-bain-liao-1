@@ -24,7 +24,7 @@ class GameScene extends Phaser.Scene {
    *  before preload () and create ().
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  init(data) {
+  init (data) {
     this.cameras.main.setBackgroundColor('#ffffff')
   }
 
@@ -32,7 +32,7 @@ class GameScene extends Phaser.Scene {
    * Can be defined on your own Scenes.
    * Use it to load assets.
    */
-  preload() {
+  preload () {
     console.log('Game Scene')
 
     this.load.image('starBackground', './assets/starBackground.png')
@@ -44,7 +44,7 @@ class GameScene extends Phaser.Scene {
    * Use it to create your game objects.
    * @param {object} data Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  create(data) {
+  create (data) {
     this.background = this.add.image(0, 0, 'starBackground').setScale(2.0)
     this.background.setOrigin(0, 0)
 
@@ -57,9 +57,9 @@ class GameScene extends Phaser.Scene {
    * @param {number} time The current time.
    * @param {number} delta The delta time in ms since the last frame.
    */
-  update(time, delta) {
-    const keyLeftObj = this.input.keyboard.addKey('LEFT')
-    const keyRightObj = this.input.keyboard.addKey('RIGHT')
+  update (time, delta) {
+    const keyLeftObj = this.input.keyboard.addKey ('LEFT')
+    const keyRightObj = this.input.keyboard.addKey ('RIGHT')
 
     if (keyLeftObj.isDown === true) {
       this.ship.x -= 15
