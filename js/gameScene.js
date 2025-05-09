@@ -65,9 +65,9 @@ class GameScene extends Phaser.Scene {
   update (time, delta) {
     // called 60 times a second
 
-    const keyLeftObj = this.input.keyboard.addKey("LEFT");
-    const keyRightObj = this.input.keyboard.addKey("RIGHT");
-    const keySpaceObj = this.input.keyboard.addKey("SPACE");
+    const keyLeftObj = this.input.keyboard.addKey('LEFT')
+    const keyRightObj = this.input.keyboard.addKey('RIGHT')
+    const keySpaceObj = this.input.keyboard.addKey('SPACE')
 
     if (keyLeftObj.isDown === true) {
       this.ship.x -= 15
@@ -87,7 +87,7 @@ class GameScene extends Phaser.Scene {
       if (this.fireMissile === false) {
         // fire missile
         this.fireMissile = true
-        const aNewMissile = this.physics.add.sprite(this.ship.x, this.ship.y, "missile")
+        const aNewMissile = this.physics.add.sprite(this.ship.x, this.ship.y, 'missile')
         this.missileGroup.add(aNewMissile)
       }
     }
